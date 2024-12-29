@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+error {
+    color: rgb(174, 0, 0);
+    font-size: 0.9rem;
+}
+
+/* Hide scrollbar by default */
+::-webkit-scrollbar {
+    width: 8px;
+    max-height: 6px;
+    background-color: rgba(16, 16, 16, 0); /* Fully transparent */
+}
+
+/* Show scrollbar on hover */
+:hover::-webkit-scrollbar {
+    background-color: rgba(16, 16, 16, 1); /* Fully opaque */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #101010;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(40, 40, 40, 0); /* Fully opaque */
+    border-radius: 4px;
+    height: 12px; 
+}
+
+/* Change thumb color on hover */
+:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(43, 43, 43, 1); /* Fully opaque */
+}
